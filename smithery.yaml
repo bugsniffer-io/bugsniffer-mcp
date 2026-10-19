@@ -1,0 +1,22 @@
+# Smithery config (stdio, runs the npm package locally).
+# Smithery's current local-server path is an MCPB bundle (see manifest.json and listings/smithery.md);
+# this file covers the repo-scan flow and other directories that still read smithery.yaml.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - bugsnifferApiKey
+    properties:
+      bugsnifferApiKey:
+        type: string
+        title: Bugsniffer API key
+        description: Free key from https://bugsniffer.io/score/api-key (30 sniffs a day)
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'bugsniffer', 'mcp'],
+      env: { BUGSNIFFER_API_KEY: config.bugsnifferApiKey }
+    })
+  exampleConfig:
+    bugsnifferApiKey: bs_live_example123

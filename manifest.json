@@ -1,0 +1,54 @@
+{
+  "manifest_version": "0.3",
+  "name": "bugsniffer",
+  "display_name": "Bugsniffer",
+  "version": "0.1.0",
+  "description": "Free Sniff Score for your deployed web app: score, findings and a fix prompt your agent can act on.",
+  "long_description": "Bugsniffer is AI-run QA for vibe-coded apps. This server loads your public homepage once, like a visitor would, and returns a score out of 100, a verdict, structured findings (console errors, failed requests, broken links, speed, mobile layout, accessibility, SEO) and a fix prompt. Fix, redeploy, re-sniff. Free keys get 30 sniffs a day. Paid Smoke and Deep runs test every page, form, login and checkout.",
+  "author": {
+    "name": "Bugsniffer",
+    "email": "support@bugsniffer.io",
+    "url": "https://bugsniffer.io"
+  },
+  "homepage": "https://bugsniffer.io/mcp",
+  "documentation": "https://github.com/bugsniffer/bugsniffer-mcp#readme",
+  "support": "https://github.com/bugsniffer/bugsniffer-mcp/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsniffer/bugsniffer-mcp"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/cli.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/cli.js", "mcp"],
+      "env": {
+        "BUGSNIFFER_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "tools": [
+    { "name": "sniff_score", "description": "Score a deployed web app's homepage and return findings plus a fix prompt" },
+    { "name": "get_sniff_result", "description": "Fetch an earlier Sniff Score by id" },
+    { "name": "bugsniffer_upgrade_info", "description": "What the paid Smoke and Deep QA runs add" }
+  ],
+  "keywords": ["qa", "testing", "web", "lighthouse", "vibe-coding", "bugs"],
+  "license": "MIT",
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "Bugsniffer API key",
+      "description": "Free key from https://bugsniffer.io/score/api-key (30 sniffs a day)",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
+}

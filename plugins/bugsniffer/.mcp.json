@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "bugsniffer": {
+      "command": "npx",
+      "args": ["-y", "bugsniffer", "mcp"],
+      "env": {
+        "BUGSNIFFER_API_KEY": "${BUGSNIFFER_API_KEY}"
+      }
+    }
+  }
+}

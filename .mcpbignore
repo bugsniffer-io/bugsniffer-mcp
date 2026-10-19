@@ -1,0 +1,11 @@
+src/
+test/
+listings/
+plugins/
+.claude-plugin/
+*.tgz
+*.mcpb
+tsconfig.json
+vitest.config.ts
+smithery.yaml
+server.json

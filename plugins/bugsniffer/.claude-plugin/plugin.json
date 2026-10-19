@@ -1,0 +1,14 @@
+{
+  "name": "bugsniffer",
+  "version": "0.1.0",
+  "description": "Free Sniff Score for your deployed web app, inside Claude Code: score, findings and a fix prompt your agent can act on.",
+  "author": {
+    "name": "Bugsniffer",
+    "email": "support@bugsniffer.io",
+    "url": "https://bugsniffer.io"
+  },
+  "homepage": "https://bugsniffer.io/mcp",
+  "repository": "https://github.com/bugsniffer/bugsniffer-mcp",
+  "license": "MIT",
+  "keywords": ["qa", "testing", "web", "mcp", "vibe-coding"]
+}

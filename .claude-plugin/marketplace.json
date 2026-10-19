@@ -1,0 +1,22 @@
+{
+  "name": "bugsniffer",
+  "owner": {
+    "name": "Bugsniffer",
+    "email": "support@bugsniffer.io"
+  },
+  "metadata": {
+    "description": "AI-run QA for vibe-coded apps. We test the back end. Literally."
+  },
+  "plugins": [
+    {
+      "name": "bugsniffer",
+      "source": "./plugins/bugsniffer",
+      "description": "Free Sniff Score for your deployed web app, inside Claude Code: score, findings and a fix prompt, plus /bugsniffer:sniff.",
+      "version": "0.1.0",
+      "category": "testing",
+      "keywords": ["qa", "testing", "web", "mcp"],
+      "homepage": "https://bugsniffer.io/mcp",
+      "license": "MIT"
+    }
+  ]
+}
