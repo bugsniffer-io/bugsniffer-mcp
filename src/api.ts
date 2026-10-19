@@ -59,7 +59,7 @@ export function normaliseUrl(input: string): string {
 
 export function noKeyMessage(): string {
   return [
-    "No Bugsniffer API key found. Set BUGSNIFFER_API_KEY.",
+    "No API key found. Set BUGSNIFFER_API_KEY.",
     `Get a free key (30 sniffs a day) at ${KEY_URL}. It's shown once, so copy it somewhere safe.`,
     "Then add it to your MCP config's env block, or run: export BUGSNIFFER_API_KEY=...",
   ].join("\n");
