@@ -8,6 +8,7 @@ export interface CliIO {
   env: Record<string, string | undefined>;
   fetch?: typeof fetch;
   sleep?: (ms: number) => Promise<void>;
+  now?: () => number;
   startServer?: () => Promise<void>;
 }
 
@@ -95,6 +96,7 @@ export async function run(argv: string[], io: CliIO): Promise<number> {
     apiKey: io.env.BUGSNIFFER_API_KEY,
     fetch: io.fetch,
     sleep: io.sleep,
+    now: io.now,
     client: "cli",
   });
   const showProgress = !parsed.json && Boolean(io.stderr.isTTY);
