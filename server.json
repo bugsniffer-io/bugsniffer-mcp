@@ -26,7 +26,7 @@
       "environmentVariables": [
         {
           "name": "BUGSNIFFER_API_KEY",
-          "description": "Free Bugsniffer API key from https://bugsniffer.io/score/api-key (30 sniffs a day)",
+          "description": "Free Bugsniffer API key from https://bugsniffer.io/score/api-key (10 sniffs a day)",
           "isRequired": true,
           "isSecret": true,
           "format": "string"

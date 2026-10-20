@@ -26,7 +26,7 @@ Options
   -h, --help         Show this help
   -v, --version      Show the version
 
-Needs BUGSNIFFER_API_KEY. Free keys (30 sniffs a day): ${KEY_URL}
+Needs BUGSNIFFER_API_KEY. Free keys (10 sniffs a day): ${KEY_URL}
 It only loads your homepage once, like a visitor would. Only sniff apps you own.
 `;
 

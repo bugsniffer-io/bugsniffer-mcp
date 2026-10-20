@@ -11,7 +11,7 @@ startCommand:
       bugsnifferApiKey:
         type: string
         title: Bugsniffer API key
-        description: Free key from https://bugsniffer.io/score/api-key (30 sniffs a day)
+        description: Free key from https://bugsniffer.io/score/api-key (10 sniffs a day)
   commandFunction: |-
     (config) => ({
       command: 'npx',

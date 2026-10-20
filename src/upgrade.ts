@@ -3,7 +3,7 @@ export const SCORE_URL = "https://bugsniffer.io/score";
 
 export const UPGRADE_INFO = {
   free_sniff_score: {
-    price: "Free (30 a day per API key)",
+    price: "Free (10 a day per API key)",
     covers:
       "One load of your public homepage, desktop and 390 px mobile, like a visitor would: console errors, failed requests, broken links, speed, basic accessibility and SEO.",
     does_not_cover: [

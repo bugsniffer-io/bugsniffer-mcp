@@ -33,7 +33,7 @@ Verdicts: 90+ **Squeaky clean**, 70 to 89 **A bit whiffy**, 40 to 69 **Something
 
 ## 1. Get a free key
 
-Grab one at **https://bugsniffer.io/score/api-key**. It's shown once, so copy it somewhere safe. Free keys get 30 sniffs a day.
+Grab one at **https://bugsniffer.io/score/api-key**. It's shown once, so copy it somewhere safe. Free keys get 10 sniffs a day.
 
 ## 2. Install
 
@@ -173,7 +173,7 @@ Paste this into your README once the dog's happy:
 ## Limits and errors
 
 - **No key:** the tools tell your agent where to get one.
-- **30 sniffs a day per key.** After that the dog needs a lie down until tomorrow.
+- **10 sniffs a day per key.** After that the dog needs a lie down until tomorrow.
 - **Blocked domains:** big brands, banks, government sites and the web's 10,000 busiest sites are off the menu. Sniff your own app.
 - **Not localhost.** Deploy first; the dog can't reach your laptop.
 

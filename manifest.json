@@ -4,7 +4,7 @@
   "display_name": "Bugsniffer",
   "version": "0.1.0",
   "description": "Free Sniff Score for your deployed web app: score, findings and a fix prompt your agent can act on.",
-  "long_description": "Bugsniffer is AI-run QA for vibe-coded apps. This server loads your public homepage once, like a visitor would, and returns a score out of 100, a verdict, structured findings (console errors, failed requests, broken links, speed, mobile layout, accessibility, SEO) and a fix prompt. Fix, redeploy, re-sniff. Free keys get 30 sniffs a day. Paid Smoke and Deep runs test every page, form, login and checkout.",
+  "long_description": "Bugsniffer is AI-run QA for vibe-coded apps. This server loads your public homepage once, like a visitor would, and returns a score out of 100, a verdict, structured findings (console errors, failed requests, broken links, speed, mobile layout, accessibility, SEO) and a fix prompt. Fix, redeploy, re-sniff. Free keys get 10 sniffs a day. Paid Smoke and Deep runs test every page, form, login and checkout.",
   "author": {
     "name": "Bugsniffer",
     "email": "support@bugsniffer.io",
@@ -40,7 +40,7 @@
     "api_key": {
       "type": "string",
       "title": "Bugsniffer API key",
-      "description": "Free key from https://bugsniffer.io/score/api-key (30 sniffs a day)",
+      "description": "Free key from https://bugsniffer.io/score/api-key (10 sniffs a day)",
       "sensitive": true,
       "required": true
     }

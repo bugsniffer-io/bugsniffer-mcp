@@ -3,7 +3,7 @@ import type { ErrorCode, ScoreJob, ScoreResult } from "./types.js";
 
 export const BASE_URL = "https://bugsniffer.io";
 export const KEY_URL = "https://bugsniffer.io/score/api-key";
-export const DAILY_LIMIT = 30;
+export const DAILY_LIMIT = 10;
 
 export class BugsnifferError extends Error {
   constructor(
@@ -60,7 +60,7 @@ export function normaliseUrl(input: string): string {
 export function noKeyMessage(): string {
   return [
     "No API key found. Set BUGSNIFFER_API_KEY.",
-    `Get a free key (30 sniffs a day) at ${KEY_URL}. It's shown once, so copy it somewhere safe.`,
+    `Get a free key (10 sniffs a day) at ${KEY_URL}. It's shown once, so copy it somewhere safe.`,
     "Then add it to your MCP config's env block, or run: export BUGSNIFFER_API_KEY=...",
   ].join("\n");
 }
@@ -93,7 +93,7 @@ export function errorFromResponse(status: number, body: ApiErrorBody, id?: strin
     );
   }
   if (status === 429) {
-    const limitHit = code === "daily_limit" || code === "rate_limited" || code === undefined;
+    const limitHit = code === "key_daily_limit" || code === "daily_limit" || code === undefined;
     const advice = limitHit
       ? `Free keys get ${DAILY_LIMIT} sniffs a day, and this one has had them. The dog needs a lie down; try again tomorrow. Need more than a homepage check? See https://bugsniffer.io/#pricing.`
       : "Easy, tiger. Too many requests at once; wait a minute and retry.";
@@ -110,6 +110,13 @@ export function errorFromResponse(status: number, body: ApiErrorBody, id?: strin
     return new BugsnifferError(
       "invalid_key",
       serverMessage ?? `Bugsniffer refused this key. Get a fresh free key at ${KEY_URL}.`,
+      status
+    );
+  }
+  if (status === 503) {
+    return new BugsnifferError(
+      "rate_limited",
+      serverMessage ?? "The dog is napping: Bugsniffer has hit today's free-score cap or is paused. Try again later.",
       status
     );
   }

@@ -90,11 +90,11 @@ describe("BugsnifferClient", () => {
   });
 
   it("maps 429 daily_limit to rate_limited with the 30-a-day limit", async () => {
-    const { fetch } = scriptedFetch([{}], json({ error: "daily_limit", message: "That's 30 sniffs today." }, 429));
+    const { fetch } = scriptedFetch([{}], json({ error: "key_daily_limit", message: "That's 10 sniffs today." }, 429));
     const err = await caught(client(fetch).sniff("https://my-app.com"));
     expect(err.code).toBe("rate_limited");
-    expect(err.message).toContain("30 sniffs a day");
-    expect(err.message).toContain("That's 30 sniffs today.");
+    expect(err.message).toContain("10 sniffs a day");
+    expect(err.message).toContain("That's 10 sniffs today.");
   });
 
   it("maps 429 slow_down to a short wait message", async () => {

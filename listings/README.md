@@ -6,7 +6,7 @@ Shared copy, reused across listings:
 
 - **Name:** Bugsniffer
 - **One-liner (99 chars):** Free Sniff Score for your deployed web app: score, findings and a fix prompt your agent can act on.
-- **Short pitch:** AI-run QA for vibe-coded apps, inside your editor. Say "sniff my app" and get a score out of 100, the findings as JSON and a fix prompt. Fix, redeploy, re-sniff. It only loads your homepage like a visitor would. Free key, 30 sniffs a day.
+- **Short pitch:** AI-run QA for vibe-coded apps, inside your editor. Say "sniff my app" and get a score out of 100, the findings as JSON and a fix prompt. Fix, redeploy, re-sniff. It only loads your homepage like a visitor would. Free key, 10 sniffs a day.
 - **Tagline:** We test the back end. Literally.
 - **Website:** https://bugsniffer.io/mcp
 - **Repo (placeholder until created):** https://github.com/bugsniffer/bugsniffer-mcp
