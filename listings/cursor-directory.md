@@ -14,7 +14,7 @@ We test the back end. Literally.
 **Category:** Developer Tools (secondary: Testing)
 **Tags:** qa, testing, web, lighthouse, vibe-coding
 **Website:** https://bugsniffer.io/mcp
-**GitHub:** https://github.com/bugsniffer/bugsniffer-mcp
+**GitHub:** https://github.com/bugsniffer-io/bugsniffer-mcp
 **Logo:** `../icon.png`
 
 **Install config:**

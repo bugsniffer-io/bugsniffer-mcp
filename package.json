@@ -44,7 +44,7 @@
   "homepage": "https://bugsniffer.io/mcp",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bugsniffer/bugsniffer-mcp.git"
+    "url": "git+https://github.com/bugsniffer-io/bugsniffer-mcp.git"
   },
   "bugs": {
     "email": "support@bugsniffer.io"

@@ -8,7 +8,7 @@
     "url": "https://bugsniffer.io"
   },
   "homepage": "https://bugsniffer.io/mcp",
-  "repository": "https://github.com/bugsniffer/bugsniffer-mcp",
+  "repository": "https://github.com/bugsniffer-io/bugsniffer-mcp",
   "license": "MIT",
   "keywords": ["qa", "testing", "web", "mcp", "vibe-coding"]
 }

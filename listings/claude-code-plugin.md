@@ -9,7 +9,7 @@ This repo is itself a plugin marketplace. Both manifests pass `claude plugin val
 
 **How users install (once the GitHub repo is public):**
 ```
-/plugin marketplace add bugsniffer/bugsniffer-mcp
+/plugin marketplace add bugsniffer-io/bugsniffer-mcp
 /plugin install bugsniffer@bugsniffer
 ```
 

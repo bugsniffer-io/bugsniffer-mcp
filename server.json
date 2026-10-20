@@ -4,7 +4,7 @@
   "title": "Bugsniffer",
   "description": "Free Sniff Score for your deployed web app: score, findings and a fix prompt your agent can act on.",
   "repository": {
-    "url": "https://github.com/bugsniffer/bugsniffer-mcp",
+    "url": "https://github.com/bugsniffer-io/bugsniffer-mcp",
     "source": "github"
   },
   "websiteUrl": "https://bugsniffer.io/mcp",

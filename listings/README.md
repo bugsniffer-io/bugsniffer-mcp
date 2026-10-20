@@ -9,7 +9,7 @@ Shared copy, reused across listings:
 - **Short pitch:** AI-run QA for vibe-coded apps, inside your editor. Say "sniff my app" and get a score out of 100, the findings as JSON and a fix prompt. Fix, redeploy, re-sniff. It only loads your homepage like a visitor would. Free key, 10 sniffs a day.
 - **Tagline:** We test the back end. Literally.
 - **Website:** https://bugsniffer.io/mcp
-- **Repo (placeholder until created):** https://github.com/bugsniffer/bugsniffer-mcp
+- **Repo :** https://github.com/bugsniffer-io/bugsniffer-mcp
 - **Icon:** `../icon.png` (512 x 512 paw)
 - **Install command:** `npx -y bugsniffer mcp` with env `BUGSNIFFER_API_KEY`
 

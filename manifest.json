@@ -11,11 +11,11 @@
     "url": "https://bugsniffer.io"
   },
   "homepage": "https://bugsniffer.io/mcp",
-  "documentation": "https://github.com/bugsniffer/bugsniffer-mcp#readme",
-  "support": "https://github.com/bugsniffer/bugsniffer-mcp/issues",
+  "documentation": "https://github.com/bugsniffer-io/bugsniffer-mcp#readme",
+  "support": "https://github.com/bugsniffer-io/bugsniffer-mcp/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bugsniffer/bugsniffer-mcp"
+    "url": "https://github.com/bugsniffer-io/bugsniffer-mcp"
   },
   "icon": "icon.png",
   "server": {

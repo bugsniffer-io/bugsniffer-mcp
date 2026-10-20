@@ -48,7 +48,7 @@ claude mcp add bugsniffer --scope user -e BUGSNIFFER_API_KEY=your-key-here -- np
 Or as a plugin, which also gives you a `/bugsniffer:sniff` command:
 
 ```
-/plugin marketplace add bugsniffer/bugsniffer-mcp
+/plugin marketplace add bugsniffer-io/bugsniffer-mcp
 /plugin install bugsniffer@bugsniffer
 ```
 

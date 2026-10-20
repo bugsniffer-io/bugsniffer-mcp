@@ -4,7 +4,7 @@ Submit at https://mcp.so/submit (sign in with the brand GitHub account). Free, s
 
 **Type:** MCP Server
 **Name:** Bugsniffer
-**URL:** https://github.com/bugsniffer/bugsniffer-mcp
+**URL:** https://github.com/bugsniffer-io/bugsniffer-mcp
 **Server config:**
 ```json
 {
